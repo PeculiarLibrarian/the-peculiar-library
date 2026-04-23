@@ -1,0 +1,10 @@
+@prefix library: <https://peculiar-librarian.org/library/> .
+@prefix padi: <https://doi.org/10.5281/zenodo.18894084/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# THE ATTACK: Injecting an unverified, non-numeric depth 
+# designed to bypass "minCount" but fail "datatype".
+library:InfiltrationNode a skos:Concept ;
+    skos:prefLabel "Deep State Logic"@en ;
+    padi:hasDepthIndex "COMPROMISED"^^xsd:string . 

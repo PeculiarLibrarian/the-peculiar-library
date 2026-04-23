@@ -3,13 +3,24 @@
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
 
+# The Sovereign Architect
+library:SMGitandu a foaf:Person ;
+    foaf:name "Samuel Muriithi Gitandu" ;
+    foaf:title "B.S. Information Science (Librarianship)" ;
+    foaf:nick "Peculiar Librarian" ;
+    foaf:workplace "Nairobi Node (N-1)" .
+
+# The Defined Concepts linked to the Architect
 library:OntologyEngineering a skos:Concept ;
     skos:prefLabel "Ontology Engineering"@en ;
     padi:hasDepthIndex "0.95"^^xsd:float ;
-    dcterms:subject "DDC:006.332" .
+    dcterms:subject "DDC:006.332" ;
+    dcterms:creator library:SMGitandu .
 
 library:NeuroSymbolicOrchestration a skos:Concept ;
     skos:prefLabel "Neuro-Symbolic Orchestration"@en ;
     padi:hasDepthIndex "0.98"^^xsd:float ;
-    dcterms:subject "DDC:006.3" .
+    dcterms:subject "DDC:006.3" ;
+    dcterms:creator library:SMGitandu .
