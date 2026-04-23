@@ -12,23 +12,37 @@
     },
     "@graph": [
         {
-            "@id": "library:NeuroSymbolicOrchestration",
-            "@type": "skos:Concept",
-            "depth": "0.98",
-            "http://purl.org/dc/terms/subject": "DDC:006.3",
-            "label": {
-                "@language": "en",
-                "@value": "Neuro-Symbolic Orchestration"
-            }
-        },
-        {
             "@id": "library:OntologyEngineering",
             "@type": "skos:Concept",
             "depth": "0.95",
+            "http://purl.org/dc/terms/creator": {
+                "@id": "library:SMGitandu"
+            },
             "http://purl.org/dc/terms/subject": "DDC:006.332",
             "label": {
                 "@language": "en",
                 "@value": "Ontology Engineering"
+            }
+        },
+        {
+            "@id": "library:SMGitandu",
+            "@type": "http://xmlns.com/foaf/0.1/Person",
+            "http://xmlns.com/foaf/0.1/name": "Samuel Muriithi Gitandu",
+            "http://xmlns.com/foaf/0.1/nick": "Peculiar Librarian",
+            "http://xmlns.com/foaf/0.1/title": "B.S. Information Science (Librarianship)",
+            "http://xmlns.com/foaf/0.1/workplace": "Nairobi Node (N-1)"
+        },
+        {
+            "@id": "library:NeuroSymbolicOrchestration",
+            "@type": "skos:Concept",
+            "depth": "0.98",
+            "http://purl.org/dc/terms/creator": {
+                "@id": "library:SMGitandu"
+            },
+            "http://purl.org/dc/terms/subject": "DDC:006.3",
+            "label": {
+                "@language": "en",
+                "@value": "Neuro-Symbolic Orchestration"
             }
         }
     ]
