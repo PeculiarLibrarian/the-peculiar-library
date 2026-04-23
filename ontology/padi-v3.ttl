@@ -2,11 +2,14 @@
 @prefix padi: <https://doi.org/10.5281/zenodo.18894084/> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
 
 library:OntologyEngineering a skos:Concept ;
     skos:prefLabel "Ontology Engineering"@en ;
-    padi:hasDepthIndex "0.95"^^xsd:float .
+    padi:hasDepthIndex "0.95"^^xsd:float ;
+    dcterms:subject "DDC:006.332" .
 
 library:NeuroSymbolicOrchestration a skos:Concept ;
     skos:prefLabel "Neuro-Symbolic Orchestration"@en ;
-    padi:hasDepthIndex "0.98"^^xsd:float .
+    padi:hasDepthIndex "0.98"^^xsd:float ;
+    dcterms:subject "DDC:006.3" .
