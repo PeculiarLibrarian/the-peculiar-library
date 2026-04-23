@@ -1,0 +1,16 @@
+@prefix sh: <http://www.w3.org/ns/shacl#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix padi: <https://doi.org/10.5281/zenodo.18894084/> .
+
+skos:ConceptShape
+    a sh:NodeShape ;
+    sh:targetClass skos:Concept ;
+    sh:property [
+        sh:path skos:prefLabel ;
+        sh:minCount 1 ;
+    ] ;
+    sh:property [
+        sh:path padi:hasDepthIndex ;
+        sh:minCount 1 ;
+        sh:datatype <http://www.w3.org/2001/XMLSchema#float> ;
+    ] .

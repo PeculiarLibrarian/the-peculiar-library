@@ -1,0 +1,33 @@
+{
+    "@context": {
+        "depth": {
+            "@id": "padi:hasDepthIndex",
+            "@type": "xsd:float"
+        },
+        "label": "skos:prefLabel",
+        "library": "https://peculiar-librarian.org/library/",
+        "padi": "https://doi.org/10.5281/zenodo.18894084/",
+        "skos": "http://www.w3.org/2004/02/skos/core#",
+        "xsd": "http://www.w3.org/2001/XMLSchema#"
+    },
+    "@graph": [
+        {
+            "@id": "library:NeuroSymbolicOrchestration",
+            "@type": "skos:Concept",
+            "depth": "0.98",
+            "label": {
+                "@language": "en",
+                "@value": "Neuro-Symbolic Orchestration"
+            }
+        },
+        {
+            "@id": "library:OntologyEngineering",
+            "@type": "skos:Concept",
+            "depth": "0.95",
+            "label": {
+                "@language": "en",
+                "@value": "Ontology Engineering"
+            }
+        }
+    ]
+}
