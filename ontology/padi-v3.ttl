@@ -4,15 +4,17 @@
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
 @prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix schema: <https://schema.org/> .
 
-# The Sovereign Architect
+# The Sovereign Architect & Alumnus
 library:SMGitandu a foaf:Person ;
     foaf:name "Samuel Muriithi Gitandu" ;
     foaf:title "B.S. Information Science (Librarianship)" ;
     foaf:nick "Peculiar Librarian" ;
+    schema:alumniOf "Karatina University" ;
     foaf:workplace "Nairobi Node (N-1)" .
 
-# The Defined Concepts linked to the Architect
+# The Knowledge Nodes
 library:OntologyEngineering a skos:Concept ;
     skos:prefLabel "Ontology Engineering"@en ;
     padi:hasDepthIndex "0.95"^^xsd:float ;

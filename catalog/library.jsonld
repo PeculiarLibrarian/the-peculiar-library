@@ -30,7 +30,8 @@
             "http://xmlns.com/foaf/0.1/name": "Samuel Muriithi Gitandu",
             "http://xmlns.com/foaf/0.1/nick": "Peculiar Librarian",
             "http://xmlns.com/foaf/0.1/title": "B.S. Information Science (Librarianship)",
-            "http://xmlns.com/foaf/0.1/workplace": "Nairobi Node (N-1)"
+            "http://xmlns.com/foaf/0.1/workplace": "Nairobi Node (N-1)",
+            "https://schema.org/alumniOf": "Karatina University"
         },
         {
             "@id": "library:NeuroSymbolicOrchestration",
