@@ -1,0 +1,15 @@
+@prefix sh: <http://www.w3.org/ns/shacl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix padi: <https://doi.org/10.5281/zenodo.18894084/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+padi:PadiDepthShape
+    a sh:NodeShape ;
+    sh:targetClass skos:Concept ;
+    sh:property [
+        sh:path padi:hasDepthIndex ;
+        sh:datatype xsd:float ;          # CRITICAL: Must be a float
+        sh:minCount 1 ;                  # Must exist
+        sh:maxCount 1 ;                  # CRITICAL: No duplicates allowed
+        sh:message "CRITICAL: PADI depth must be exactly ONE verified float." ;
+    ] .
