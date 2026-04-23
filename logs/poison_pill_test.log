@@ -1,0 +1,13 @@
+
+🚨 VALIDATION BREACH DETECTED 🚨
+Validation Report
+Conforms: False
+Results (1):
+Constraint Violation in DatatypeConstraintComponent (http://www.w3.org/ns/shacl#DatatypeConstraintComponent):
+	Severity: sh:Violation
+	Source Shape: [ sh:datatype xsd:float ; sh:maxCount Literal("1", datatype=xsd:integer) ; sh:message Literal("CRITICAL: PADI depth must be exactly ONE verified float.") ; sh:minCount Literal("1", datatype=xsd:integer) ; sh:path padi:hasDepthIndex ]
+	Focus Node: library:InfiltrationNode
+	Value Node: Literal("COMPROMISED", datatype=xsd:string)
+	Result Path: padi:hasDepthIndex
+	Message: CRITICAL: PADI depth must be exactly ONE verified float.
+
