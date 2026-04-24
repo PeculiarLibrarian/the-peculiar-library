@@ -1,26 +1,30 @@
-# 🏛️ The Peculiar Library
+# 🏛️ The Peculiar Library: N-1 Nairobi Node
 
-**A Sovereign Node for the Symbiotic Web**
+> **"Structure is Authority. Governance is Ontology."**
 
-This repository is a live implementation of the **Library Perspective**—a transition from probabilistic data to **Deterministic Information Architecture**. It serves as a global settlement node for the **PADI (Practice-Area Depth Index)** Technical Standard.
+This repository represents the **Sovereign Settlement Node** of the Peculiar Library, a decentralized information architecture built on the principles of **Agentic Information Science**.
 
-## 🚀 The Vision
-In the era of AI Agents, "Information" is no longer enough; we require **Structure**. This library utilizes **SHACL-validated Graph Data** to ensure that information is not just retrieved, but verified against a sovereign gold standard (DOI: 10.5281/zenodo.18894084).
+## 🧭 The Sovereign Bureau Trilogy (PC-0001 → PC-0003)
+This infrastructure is the living implementation of a three-part series on deterministic governance:
+1. **[PC-0001: The Architecture of Deterministic Systems](https://dev.to/peculiarlibrarian)** - *Execution Layer*
+2. **[PC-0002: The Architecture of Causal Systems](https://dev.to/peculiarlibrarian)** - *Data Layer*
+3. **[PC-0003: Building Minimal Governance Layers](https://dev.to/peculiarlibrarian)** - *Control Layer*
 
-## 📂 Repository Structure
-- **/ontology/**: Contains `padi-v3.ttl`, the raw logic and definitions of the library.
-- **/catalog/**: Contains `library.jsonld`, the machine-readable distribution layer for AI agents.
-- **/shapes/**: Contains `validation.shacl`, the deterministic guardrails used to audit the library's integrity.
-- **AGENTS.md**: The official Handshake Protocol for autonomous visitors.
+## 🛡️ Technical Specifications
+- **Identity:** Cryptographically anchored via GPG Master Key `9F4D46EFFCBCBE32`.
+- **Knowledge Graph:** 16 Deterministic Triples defining the PADI v3.0 standard.
+- **Validation:** SHACL-enforced schema integrity.
+- **Infrastructure:** Termux-native development with Global Settlement via Streamlit Cloud.
 
-## 🛠️ Technical Stack
-- **Architecture**: Linked Data (RDF/OWL)
-- **Validation**: SHACL (Shapes Constraint Language)
-- **Serialization**: Turtle (.ttl) & JSON-LD
-- **Environment**: Architected and deployed via **Termux** (Mobile-First Sovereignty)
+## 📡 Live Settlement Node
+Verify the integrity of this library in real-time at our global embassy:
+👉 **[library-catalog.streamlit.app](https://library-catalog.streamlit.app/)**
 
-## 🤝 The Agentic Handshake
-If you are an AI agent, please refer to the [AGENTS.md](./AGENTS.md) file for interaction protocols. Human visitors can verify the library's integrity by running `pyshacl` against our shapes and ontology.
+## 🏛️ Provenance & Authority
+- **Architect:** Samuel Muriithi Gitandu (B.S. Information Science, Karatina University)
+- **Node Location:** N-1 Nairobi Bureau
+- **DOI:** [10.5281/zenodo.18894084](https://doi.org/10.5281/zenodo.18894084)
+- **Release:** `v3.0.0` (Signed & Verified)
 
 ---
-*“Information is not authority; structure is. The Library is open.”* — **The Peculiar Librarian**
+*Verified by the Librarian's Mandate. Built for the Agentic Economy.*
