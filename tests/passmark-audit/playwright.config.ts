@@ -1,17 +1,12 @@
 import { defineConfig } from '@playwright/test';
 import { configure } from 'passmark';
-import dotenv from 'dotenv';
-import path from 'path';
-import { fileURLToPath } from 'url';
 
-const __filename = fileURLToPath(import.meta.url);
-const __dirname = path.dirname(__filename);
-
-dotenv.config({ path: path.resolve(__dirname, '.env') });
-
+// Force use of the injected GitHub Secret
 configure({
   ai: {
-    gateway: "openrouter"
+    gateway: "openrouter",
+    model: "google/gemini-2.0-flash-001",
+    apiKey: process.env.OPENROUTER_API_KEY 
   }
 });
 
@@ -21,5 +16,5 @@ export default defineConfig({
     browserName: 'chromium',
     headless: true,
   },
-  reporter: [['html', { open: 'never' }]],
+  timeout: 60000,
 });
