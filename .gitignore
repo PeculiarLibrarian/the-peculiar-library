@@ -3,3 +3,4 @@ node_modules/
 tests/passmark-audit/test-results/
 tests/passmark-audit/.env
 tests/passmark-audit/.env
+SOVEREIGN_SECRET_BACKUP.asc
