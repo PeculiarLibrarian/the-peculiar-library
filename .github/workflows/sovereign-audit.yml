@@ -22,6 +22,7 @@ jobs:
           npx playwright install --with-deps chromium
       - name: Run Passmark Audit
         env:
+          # This maps your GitHub Secret to the environment
           OPENROUTER_API_KEY: ${{ secrets.OPENROUTER_API_KEY }}
         run: |
           cd tests/passmark-audit
