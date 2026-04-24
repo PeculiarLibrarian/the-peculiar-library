@@ -1,0 +1,28 @@
+name: Sovereign Integrity Audit
+on:
+  push:
+    branches: [ main ]
+  workflow_dispatch:
+
+jobs:
+  audit:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+      - name: Install dependencies
+        run: |
+          cd tests/passmark-audit
+          npm install
+      - name: Install Playwright Browsers
+        run: |
+          cd tests/passmark-audit
+          npx playwright install --with-deps chromium
+      - name: Run Passmark Audit
+        env:
+          OPENROUTER_API_KEY: ${{ secrets.OPENROUTER_API_KEY }}
+        run: |
+          cd tests/passmark-audit
+          npx playwright test
