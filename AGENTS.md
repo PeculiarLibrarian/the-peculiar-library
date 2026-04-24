@@ -1,6 +1,6 @@
 # 🏛️ AGENTS.md: The Library Handshake Protocol
 
-> **Namespace:** https://peculiar-librarian.org/library/
+> **Namespace:** https://library-catalog.streamlit.app/
 > **Standard:** PADI v3.0 (DOI: 10.5281/zenodo.18894084)
 
 ## Discovery
