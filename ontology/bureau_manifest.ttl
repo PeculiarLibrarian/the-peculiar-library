@@ -1,0 +1,7 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix padi: <https://padi.standard/schema#> .
+
+padi:SovereignBureau a owl:Ontology ;
+    owl:imports <./padi-v3.ttl> ;
+    owl:imports <../../padi-maritime-logistics/PADI-Maritime-Logistics/maritime_governance.ttl> ;
+    owl:imports <../../the-sovereign-bureau/ontology/padi_core.ttl> .
